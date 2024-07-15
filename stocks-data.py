@@ -10,7 +10,7 @@ def get_latest_price(ticker):
     try:
         # Get latest data for the stock ticker
         data, meta_data = alpha_vantage.get_quote_endpoint(symbol=ticker)
-        print(data, meta_data)
+        # print(data, meta_data)
         # Extract latest price from the data
         latest_price = data['05. price']
         return latest_price
